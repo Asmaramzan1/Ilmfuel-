@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — IlmFuel</title>
+<meta name="description" content="IlmFuel is for curious young Muslims and thoughtful learners navigating study, work, worship, and a rapidly changing digital world.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">Ilm<span>Fuel</span></a>
+    <div class="nav-links">
+      <a href="hifdh.html">Hifdh</a>
+      <a href="focus.html">Focus</a>
+      <a href="ai-tech.html">AI &amp; Tech</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="nav-cta" onclick="location.href='resources.html'">Start Here</button>
+    </div>
+    <button class="menu-btn" aria-label="Open menu" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-top">
+    <span class="logo">Ilm<span>Fuel</span></span>
+    <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
+  </div>
+  <a href="hifdh.html" onclick="closeMenu()">Hifdh</a>
+  <a href="focus.html" onclick="closeMenu()">Focus</a>
+  <a href="ai-tech.html" onclick="closeMenu()">AI &amp; Tech</a>
+  <a href="resources.html" onclick="closeMenu()">Resources</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+  <button class="nav-cta" onclick="location.href='resources.html'">Start Here</button>
+</div>
+
+<main>
+  <section class="about wrap">
+    <p class="eyebrow reveal">About IlmFuel</p>
+    <p class="lede reveal">Knowledge should bring us closer to what matters.</p>
+    <p class="reveal" style="color:var(--mid-green); max-width:640px; font-size:1.1rem; margin-bottom:40px;">
+      IlmFuel is for curious young Muslims and thoughtful learners navigating study, work,
+      worship, and a rapidly changing digital world.
+    </p>
+    <div class="card-grid reveal">
+      <div class="card">
+        <h3>Spiritually grounded</h3>
+        <p>Faith is not another item on the schedule. It shapes the purpose behind everything else.</p>
+      </div>
+      <div class="card">
+        <h3>Useful by design</h3>
+        <p>Every guide should help you make a clearer decision or take a meaningful next step.</p>
+      </div>
+      <div class="card">
+        <h3>Hopeful about the future</h3>
+        <p>We approach new tools with curiosity, discernment, and confidence in enduring values.</p>
+      </div>
+      <div class="card">
+        <h3>Practical, not preachy</h3>
+        <p>We create practical resources at the meeting point of timeless principles and modern realities — no hustle worship, no fear of technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="newsletter reveal">
+      <h3>Get one useful idea a week</h3>
+      <p>No noise, no hustle content — just practical guidance on faith, focus, and living well.</p>
+      <form class="form-row" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="you@email.com" required aria-label="Email address">
+        <button type="submit" class="btn-primary">Join</button>
+      </form>
+      <p class="form-msg"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">Ilm<span>Fuel</span></a>
+        <p class="tagline">Where faith meets focus. Practical ideas for a life of purposeful learning.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">EXPLORE</p>
+        <a href="hifdh.html">Hifdh</a>
+        <a href="focus.html">Focus</a>
+        <a href="ai-tech.html">AI &amp; Tech</a>
+        <a href="resources.html">Resources</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">ILMFUEL</p>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://instagram.com/ilmfuel" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 IlmFuel. Learn with purpose.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
